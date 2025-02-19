@@ -1,0 +1,90 @@
+npm create vite@latest
+npm install react-router-dom react-toastify
+
+search for: vite + tailwind
+https://v3.tailwindcss.com/docs/guides/vite
+npm install -D tailwindcss@3 postcss autoprefixer
+npx tailwindcss init -p
+in tailwind.config file
+1. delete all code
+2. paste this:
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+in index.css file:
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+setting the routers in main.jsx
+import {BrowserRouter} from "react-router-dom";
+
+createRoot(document.getElementById('root')).render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+)
+
+using react toastify
+https://www.npmjs.com/package/react-toastify
+the toast notification will be used when the user tries to add a item to the cart without selecting the size
+
+
+// Backend
+
+create server.js and run npm init
+
+installing dependencies:
+
+\Backend
+npm i cors dotenv express jsonwebtoken mongoose multer nodemon razorpay stripe validator cloudinary bcrypt
+
+you need to add "type": "module" to be able to import item
+
+
+mongodb atlas
+user: vitoralexse
+password: 9qa00jnUsvO4CjLy
+
+
+cloudinary
+https://cloudinary.com/home
+
+
+
+// admin
+
+tailwind vite
+https://v3.tailwindcss.com/docs/guides/vite
+
+npm install -D tailwindcss@3 postcss autoprefixer
+npx tailwindcss init -p
+
+index.css
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+
+outfit font
+
+
+react toastify
+https://www.npmjs.com/package/react-toastify
+
